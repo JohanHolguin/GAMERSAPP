@@ -3,8 +3,6 @@ import path from 'path';
 import fs from 'fs-extra'
 import { extImage } from './utilities'
 import { env } from '../config/config';
-import filetype, { stream } from 'file-type'
-import { Stream } from 'stream';
 
 const storage = multer.diskStorage({
   destination: env.desUpload,

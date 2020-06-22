@@ -8,9 +8,3 @@ export const env = {
   expiresIn: process.env.EXPIRE_TOKEN,
   desUpload: process.env.DESTINATION_UPLOAD
 }
-
-
-
-
-
-

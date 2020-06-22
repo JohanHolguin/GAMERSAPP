@@ -29,7 +29,7 @@ function checkToken(req, res, next) {
         }
         catch (e) {
             console.log(e);
-            res.status(500).send('There was a problem registering your user');
+            res.status(500).send('Problemas para validar un usuario');
         }
     });
 }

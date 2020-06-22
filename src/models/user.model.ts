@@ -1,7 +1,6 @@
 import mongoose, { model, Schema } from 'mongoose';
 import bcrypt from 'bcryptjs';
 
-
 export interface User extends mongoose.Document {
 
     encryptPassword(upass: string): Promise<string>;
@@ -28,7 +27,3 @@ UserSchema.methods.comparePassword = async function (upass:string): Promise<bool
 };
 
 export default model<User>('User', UserSchema);
-
-
-
-
